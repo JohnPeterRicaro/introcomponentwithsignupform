@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="intro-component-with-signup-form-master/images/favicon-32x32.png">
+    <script src="script/script.js" defer></script>
+    <title>Component Sign Up</title>
+</head>
+<body class=" h-screen w-full font-sans text-componentDarkBlue bg-componentRed flex justify-center items-center">
+    <div class=" relative w-[375px] h-screen flex justify-center items-center flex-col p-6 md:w-full md:flex-row">
+        <div class=" absolute w-full h-screen -z-10 md:hidden">
+            <img src="intro-component-with-signup-form-master/images/bg-intro-mobile.png" alt="">
+        </div>
+        <div class=" absolute w-full h-screen -z-10 hidden md:block">
+            <img src="intro-component-with-signup-form-master/images/bg-intro-desktop.png" alt="" class=" h-screen w-full">
+        </div>
+        <section class=" z-10 w-full flex space-y-6 justify-center items-center flex-col text-white mb-10 md:w-[596px] md:items-start">
+            <h1 class=" text-3xl font-bold text-center md:text-5xl md:text-left md:w-9/12">
+                Learn to code by watching others
+            </h1>
+            <p class=" text-md text-center  md:w-8/12 md:text-left">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </section>
+        <main class=" w-full space-y-6 md:w-[558px]">
+            <div class=" shadow-shadow2 rounded-xl overflow-hidden">
+                <button class=" w-full px-14 py-4 bg-componentBlue text-white">
+                    <p><a class=" font-semibold">Try it free 7 days</a> then $20/mo. thereafter</p>
+                </button>
+            </div>
+            <section>
+                <form id="regForm" action="/" method="get" class=" w-full h-[90%] shadow-shadow1 rounded-xl flex justify-start items-center flex-col
+                 px-6 pb-10 bg-white md:h-[90%]">
+                    <div class="formGroup relative w-full mt-8 mb-5">
+                        <input ischaracter required  id="input" type="text" name="FirstName" placeholder="First Name" class=" w-full h-12 p-4 rounded-md border-[1px] border-solid border-gray-400 focus:border-[1px] focus:border-componentDarkBlue focus:outline-none placeholder:font-bold placeholder:text-gray-500">
+                        <div id="errorIcon" class=" block hidden absolute flex justify-end items-center -translate-y-[36px] translate-x-[240px] md:translate-x-[468px]">
+                            <img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="">
+                        </div>
+                        <p id="error" class=" block hidden mt-2 text-right text-[11px] italic text-componentRed">DATA HERE</p>
+                    </div>
+                    <div class="formGroup relative w-full mb-5">
+                        <input ischaracter required  id="input" type="text" name="LastName" placeholder="Last Name" class=" w-full h-12 p-4 rounded-md border-[1px] border-solid border-gray-400 focus:border-[1px] focus:border-componentDarkBlue focus:outline-none placeholder:font-bold placeholder:text-gray-500">
+                        <div id="errorIcon" class=" block hidden absolute flex justify-end items-center -translate-y-[36px] translate-x-[240px] md:translate-x-[468px]">
+                            <img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="">
+                        </div>
+                        <p id="error" class=" block hidden mt-2 text-right text-[11px] italic text-componentRed">DATA HERE</p>
+                    </div>
+                    <div class="formGroup relative w-full mb-5">
+                        <input emailvalid required  id="input" type="text" name="email" placeholder="Email" class=" w-full h-12 p-4 rounded-md border-[1px] border-solid border-gray-400 focus:border-[1px] focus:border-componentDarkBlue focus:outline-none placeholder:font-bold placeholder:text-gray-500">
+                        <div id="errorIcon" class=" block hidden absolute flex justify-end items-center -translate-y-[36px] translate-x-[240px] md:translate-x-[468px]">
+                            <img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="">
+                        </div>
+                        <p id="error" class=" block  hidden mt-2 text-right text-[11px] italic text-componentRed">DATA HERE</p>
+                    </div>
+                    <div class="formGroup relative w-full mb-5">
+                        <input required id="input" type="password" name="password" placeholder="Password" class=" w-full h-12 p-4 rounded-md border-[1px] border-solid border-gray-400 focus:border-[1px] focus:border-componentDarkBlue focus:outline-none placeholder:font-bold placeholder:text-gray-500">
+                        <div id="errorIcon" class=" block hidden absolute flex justify-end items-center -translate-y-[36px] translate-x-[240px] md:translate-x-[468px]">
+                            <img src="intro-component-with-signup-form-master/images/icon-error.svg" alt="">
+                        </div>
+                        <p id="error" class=" block hidden mt-2 text-right text-[11px] italic text-componentRed">DATA HERE</p>
+                    </div>
+                    <button type="submit" class=" w-full h-14 mb-4 shadow-insetShadow1 bg-componentGreen font-medium rounded-md text-white ">
+                        CLAIM YOUR FREE TRIAL
+                    </button>
+                    <p class=" text-gray-400 text-center text-[11px] px-6">
+                        By clicking this button you are agreeing to our <a href="#" class="font-bold text-componentRed">Terms and Services</a>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
